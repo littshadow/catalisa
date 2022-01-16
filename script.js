@@ -5,17 +5,21 @@ const especie = document.querySelector('#especie');
 const condicao = document.querySelector('#status');
 
 traduzirCondicao = (data) => {
-    if(data.status == "unknown"){
+    if(data.status == 'unknown'){
         return 'Não sabemos';
-    }else if(data.status == "Alive"){
+    }else if(data.status == 'Alive'){
         return 'Sim';
     }else {
         return 'Não. Está morto';
     }
 }
 
+for(let i = 0; i < 3; i++) {
+    console.log(i);
+}
+
 gerarValorAleatorio = () => {
-    return Math.floor(Math.random() * 671)
+    return Math.floor(Math.random() * 671);
 }
 
 pegarPersonagem = () => {
